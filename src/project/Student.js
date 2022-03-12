@@ -26,7 +26,7 @@ const Student =(props)=> {
             <>
                 
                 {vals && (<>
-                    <div className='stdcontainer'>
+                    <div className='stdcontainer' >
                         <h1 className='stdText'>Student Details</h1>
                         <button className='stdButton' onClick={props.back}>Add new Student</button>
                     </div>
@@ -55,7 +55,7 @@ const Student =(props)=> {
                                         <TableCell align="right">{student.course}</TableCell>
                                         <TableCell align="right">{student.batch}</TableCell>
                                         <TableCell align="right">
-                                            <Link to={'/StudentDetail/${student.id}'}>Edit</Link>
+                                            <Link  to={'/StudentDetail/'+(student.id-1)} onClick={props.back}>Edit</Link>
                                             
                                             </TableCell>
                                     </TableRow>

@@ -29,7 +29,7 @@ const StudentDetail =(props)=> {
 
     const handleSubmit =() =>{
         let studentObj = {
-            id: students.length+1, 
+            id: students.length, 
             name:name,
             age:age,
             course:course,

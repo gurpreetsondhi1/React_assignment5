@@ -1,8 +1,10 @@
 import React from 'react'
 
 const Home = () => {
-  return (
-    <div className='text' style={{textAlign:'center'}}>Home</div>
+  const fname="sondhi";
+  return (<>
+    
+    <div className='text' style={{textAlign:'center'}}>Home</div></>
   )
 }
 
